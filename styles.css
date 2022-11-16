@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+      flex-direction: row; 
+    }
+   }
+
+a {
+    color: bisque;
+}
+
+a:hover {
+    color: #fff;
+}
+
+body::before {
+    content:'';
+    background-image: url("https://images.pexels.com/photos/13184435/pexels-photo-13184435.jpeg");
+    background-color: palegoldenrod;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(1px);
+}
+
+
+.divider {
+    border-bottom: 2px;
+    margin: 2px 0;
+    clear: right;
+  }
+
+
+header .toptop {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .1rem;
+    padding: 0 20px;
+    position: relative;
+    top: 14px;
+    width: 100%;
+    background-color: #e76f51;
+    color: #fff;
+    border: 6px solid #fdb347;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h5 {
+    position: relative;
+    top: -50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+}
+
+.info {
+    width: auto;
+    min-height: 50vh;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+figure img {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+
+
+
+footer {
+    margin: 5px 0;
+    padding: 5px;
+    border-top: 3px solid #fdb347;
+    border-left: 2px dashed #fdb347;
+    border-right: 2px dashed #fdb347;
+    border-bottom: 2px dashed #fdb347;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
